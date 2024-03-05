@@ -60,7 +60,7 @@ export default function data() {
     rows: [
       {
         author: <Author image={team2} name="Perseo Osuna" email="perseosuna@gmail.com" />,
-        function: <Job title="Manager" description="Organization" />,
+        function: <Job title="Product Owner/Manager" description="Organization" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />

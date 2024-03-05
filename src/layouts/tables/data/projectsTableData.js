@@ -23,6 +23,7 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDAvatar from "components/MDAvatar";
 import MDProgress from "components/MDProgress";
+import MDBadge from "components/MDBadge";
 
 // Images
 import LogoAsana from "assets/images/small-logos/logo-asana.svg";
@@ -31,6 +32,7 @@ import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
 import logoSlack from "assets/images/small-logos/logo-slack.svg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import OnlinePredictionIcon from "@mui/icons-material/OnlinePrediction";
 
 export default function data() {
   const Project = ({ image, name }) => (
@@ -55,33 +57,14 @@ export default function data() {
 
   return {
     columns: [
-      { Header: "project", accessor: "project", width: "30%", align: "left" },
-      { Header: "budget", accessor: "budget", align: "left" },
-      { Header: "status", accessor: "status", align: "center" },
-      { Header: "completion", accessor: "completion", align: "center" },
-      { Header: "action", accessor: "action", align: "center" },
+      { Header: "dispositivo", accessor: "project", width: "30%", align: "left" },
+      { Header: "lectura en vivo", accessor: "budget", align: "left" },
+      { Header: "estado", accessor: "status", align: "center" },
+      // { Header: "completion", accessor: "completion", align: "center" },
+      { Header: "acciones", accessor: "action", align: "center" },
     ],
 
     rows: [
-      {
-        project: <Project image={LogoAsana} name="Asana" />,
-        budget: (
-          <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,500
-          </MDTypography>
-        ),
-        status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
-          </MDTypography>
-        ),
-        completion: <Progress color="info" value={60} />,
-        action: (
-          <MDTypography component="a" href="#" color="text">
-            <Icon>more_vert</Icon>
-          </MDTypography>
-        ),
-      },
       {
         project: <Project image={logoGithub} name="Github" />,
         budget: (
@@ -90,11 +73,30 @@ export default function data() {
           </MDTypography>
         ),
         status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        // completion: <Progress color="success" value={100} />,
+        action: (
+          <MDTypography component="a" href="#" color="text">
+            <Icon>more_vert</Icon>
           </MDTypography>
         ),
-        completion: <Progress color="success" value={100} />,
+      },
+      {
+        project: <Project image={OnlinePredictionIcon} name="Asana" />,
+        budget: (
+          <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
+            $2,500
+          </MDTypography>
+        ),
+        status: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        // completion: <Progress color="info" value={60} />,
         action: (
           <MDTypography component="a" href="#" color="text">
             <Icon>more_vert</Icon>
@@ -109,11 +111,11 @@ export default function data() {
           </MDTypography>
         ),
         status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
-          </MDTypography>
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+          </MDBox>
         ),
-        completion: <Progress color="error" value={30} />,
+        // completion: <Progress color="error" value={30} />,
         action: (
           <MDTypography component="a" href="#" color="text">
             <Icon>more_vert</Icon>
@@ -128,11 +130,11 @@ export default function data() {
           </MDTypography>
         ),
         status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
-          </MDTypography>
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+          </MDBox>
         ),
-        completion: <Progress color="info" value={80} />,
+        // completion: <Progress color="info" value={80} />,
         action: (
           <MDTypography component="a" href="#" color="text">
             <Icon>more_vert</Icon>
@@ -147,11 +149,11 @@ export default function data() {
           </MDTypography>
         ),
         status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
-          </MDTypography>
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
+          </MDBox>
         ),
-        completion: <Progress color="error" value={0} />,
+        // completion: <Progress color="error" value={0} />,
         action: (
           <MDTypography component="a" href="#" color="text">
             <Icon>more_vert</Icon>
@@ -166,11 +168,11 @@ export default function data() {
           </MDTypography>
         ),
         status: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
-          </MDTypography>
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+          </MDBox>
         ),
-        completion: <Progress color="success" value={100} />,
+        // completion: <Progress color="success" value={100} />,
         action: (
           <MDTypography component="a" href="#" color="text">
             <Icon>more_vert</Icon>
