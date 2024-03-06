@@ -78,7 +78,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
+        author: <Author image={team4} name="Luis Hurtado" email="a20220247@utem.edu.mx" />,
         function: <Job title="Programator" description="Developer" />,
         status: (
           <MDBox ml={-1}>
@@ -97,7 +97,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
+        author: <Author image={team4} name="Hugo Casarrubias" email="a20220402@utem.edu.mx" />,
         function: <Job title="Executive" description="Projects" />,
         status: (
           <MDBox ml={-1}>
@@ -116,7 +116,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
+        author: <Author image={team3} name="Kaori Bautista" email="a20210170@utem.edu.mx" />,
         function: <Job title="Programator" description="Developer" />,
         status: (
           <MDBox ml={-1}>
@@ -135,7 +135,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team3} name="Richard Gran" email="richard@creative-tim.com" />,
+        author: <Author image={team3} name="Cinthya Hernandez" email="a20220255@utem.edu.mx" />,
         function: <Job title="Manager" description="Executive" />,
         status: (
           <MDBox ml={-1}>
@@ -154,7 +154,7 @@ export default function data() {
         ),
       },
       {
-        author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
+        author: <Author image={team3} name="Zuri Gonzalez" email="a20220251@utem.edu.mx" />,
         function: <Job title="Programator" description="Developer" />,
         status: (
           <MDBox ml={-1}>
