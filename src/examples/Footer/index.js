@@ -40,7 +40,7 @@ function Footer() {
         fontSize={size.sm}
         px={1.5}
       >
-        &copy; {new Date().getFullYear()} PGEEI
+        &copy; {new Date().getFullYear()} Plataforma de Gestión Energética en Edificios Inteligentes
       </MDBox>
     </MDBox>
   );
