@@ -43,6 +43,7 @@ import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import Estaciones from "layouts/estaciones";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -55,6 +56,14 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/dashboard",
     component: <Dashboard />,
+  },
+  {
+    type: "collapse",
+    name: "Estaciones",
+    key: "estaciones",
+    icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/estaciones",
+    component: <Estaciones />,
   },
   {
     type: "collapse",
