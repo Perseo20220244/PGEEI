@@ -14,18 +14,14 @@ import MDTypography from "components/MDTypography";
 import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 
 // Images
-import homeDecor1 from "assets/images/home-decor-1.jpg";
-import homeDecor2 from "assets/images/home-decor-2.jpg";
-import homeDecor3 from "assets/images/home-decor-3.jpg";
-import homeDecor4 from "assets/images/home-decor-4.jpeg";
-import labIot from "assets/images/IoT.jpg";
-import labDesarrollo from "assets/images/lab-desarrollo.jpg";
-import labSandwiches from "assets/images/sandwiches.jpg";
-import labDogos from "assets/images/dogos.jpg";
-import labRedes from "assets/images/lab-redes.jpg";
-import labChes from "assets/images/chefs.jpg";
-import labForense from "assets/images/lab-forense.webp";
-import siteUtem from "assets/images/site-utem.webp";
+import labIot from "assets/images/estaciones/IoT.jpg";
+import labDesarrollo from "assets/images/estaciones/lab-desarrollo.jpg";
+import labSandwiches from "assets/images/estaciones/sandwiches.jpg";
+import labDogos from "assets/images/estaciones/dogos.jpg";
+import labRedes from "assets/images/estaciones/lab-redes.jpg";
+import labChes from "assets/images/estaciones/chefs.jpg";
+import labForense from "assets/images/estaciones/lab-forense.webp";
+import siteUtem from "assets/images/estaciones/site-utem.webp";
 import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
