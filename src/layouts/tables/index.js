@@ -61,7 +61,7 @@ function Tables() {
                   table={{ columns, rows }}
                   isSorted={false}
                   entriesPerPage={false}
-                  showTotalEntries={false}
+                  showTotalEntries={true}
                   noEndBorder
                 />
               </MDBox>

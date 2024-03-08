@@ -79,7 +79,7 @@ export default function data() {
       },
       {
         author: <Author image={team4} name="Luis Hurtado" email="a20220247@utem.edu.mx" />,
-        function: <Job title="Programator" description="Developer" />,
+        function: <Job title="FrontEnd / IoT" description="Developer" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
@@ -98,7 +98,7 @@ export default function data() {
       },
       {
         author: <Author image={team4} name="Hugo Casarrubias" email="a20220402@utem.edu.mx" />,
-        function: <Job title="Executive" description="Projects" />,
+        function: <Job title="BackEnd / DataBase" description="Projects" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
@@ -117,7 +117,7 @@ export default function data() {
       },
       {
         author: <Author image={team3} name="Kaori Bautista" email="a20210170@utem.edu.mx" />,
-        function: <Job title="Programator" description="Developer" />,
+        function: <Job title="Diseño / Maqueta" description="Developer" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
@@ -136,10 +136,10 @@ export default function data() {
       },
       {
         author: <Author image={team3} name="Cinthya Hernandez" email="a20220255@utem.edu.mx" />,
-        function: <Job title="Manager" description="Executive" />,
+        function: <Job title="Diseño" description="Executive" />,
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="offline" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         employed: (
@@ -155,7 +155,7 @@ export default function data() {
       },
       {
         author: <Author image={team3} name="Zuri Gonzalez" email="a20220251@utem.edu.mx" />,
-        function: <Job title="Programator" description="Developer" />,
+        function: <Job title="Diseño / Documentación" description="Developer" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />

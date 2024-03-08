@@ -66,10 +66,10 @@ export default function data() {
 
     rows: [
       {
-        project: <Project image={logoGithub} name="Github" />,
+        project: <Project image={logoGithub} name="Temperatura" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $5,000
+            22°C
           </MDTypography>
         ),
         status: (
@@ -85,10 +85,10 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={OnlinePredictionIcon} name="Asana" />,
+        project: <Project image={OnlinePredictionIcon} name="Luminosidad" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,500
+            Lux lumen/m2
           </MDTypography>
         ),
         status: (
@@ -104,10 +104,10 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoAtlassian} name="Atlassian" />,
+        project: <Project image={logoAtlassian} name="Corriente" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $3,400
+            0.5 A
           </MDTypography>
         ),
         status: (
@@ -123,7 +123,7 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoSpotify} name="Spotify" />,
+        project: <Project image={OnlinePredictionIcon} name="Spotify" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
             $14,000
