@@ -18,6 +18,14 @@ import homeDecor1 from "assets/images/home-decor-1.jpg";
 import homeDecor2 from "assets/images/home-decor-2.jpg";
 import homeDecor3 from "assets/images/home-decor-3.jpg";
 import homeDecor4 from "assets/images/home-decor-4.jpeg";
+import labIot from "assets/images/IoT.jpg";
+import labDesarrollo from "assets/images/lab-desarrollo.jpg";
+import labSandwiches from "assets/images/sandwiches.jpg";
+import labDogos from "assets/images/dogos.jpg";
+import labRedes from "assets/images/lab-redes.jpg";
+import labChes from "assets/images/chefs.jpg";
+import labForense from "assets/images/lab-forense.webp";
+import siteUtem from "assets/images/site-utem.webp";
 import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
@@ -42,81 +50,157 @@ function Estaciones() {
         <Grid container spacing={6}>
           <Grid item xs={12} md={6} xl={3}>
             <DefaultProjectCard
-              image={homeDecor1}
-              label="project #2"
-              title="modern"
-              description="As Uber works through a huge amount of internal management turmoil."
+              image={labDesarrollo}
+              label="TID"
+              title="Laboratorio de desarrollo de software"
+              description="Módulo 1. Laboratorio de Informática"
               action={{
                 type: "internal",
                 route: "/pages/profile/profile-overview",
                 color: "info",
-                label: "view project",
+                label: "ver proyecto",
               }}
               authors={[
-                { image: team1, name: "Elena Morison" },
-                { image: team2, name: "Ryan Milly" },
-                { image: team3, name: "Nick Daniel" },
-                { image: team4, name: "Peterson" },
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
               ]}
             />
           </Grid>
           <Grid item xs={12} md={6} xl={3}>
             <DefaultProjectCard
-              image={homeDecor2}
-              label="project #1"
-              title="scandinavian"
-              description="Music is something that everyone has their own specific opinion about."
+              image={labSandwiches}
+              label="Gastro"
+              title="Laboratorio de Sandwiches"
+              description="El arte poner cosas entre dos panes."
               action={{
                 type: "internal",
                 route: "/pages/profile/profile-overview",
                 color: "info",
-                label: "view project",
+                label: "ver proyecto",
               }}
               authors={[
-                { image: team3, name: "Nick Daniel" },
-                { image: team4, name: "Peterson" },
-                { image: team1, name: "Elena Morison" },
-                { image: team2, name: "Ryan Milly" },
+                { image: team2, name: "Perseo Osuna" },
+                { image: team1, name: "Kaori Bautista" },
+                { image: team3, name: "Cynthia Hernandez" },
               ]}
             />
           </Grid>
           <Grid item xs={12} md={6} xl={3}>
             <DefaultProjectCard
-              image={homeDecor3}
-              label="project #3"
-              title="minimalist"
+              image={labDogos}
+              label="Gastro"
+              title="Hot Dogs 2"
+              description="El Hot Dog: ¿Más cerca del taco o del sandwich?."
+              action={{
+                type: "internal",
+                route: "/pages/profile/profile-overview",
+                color: "info",
+                label: "ver proyecto",
+              }}
+              authors={[
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6} xl={3}>
+            <DefaultProjectCard
+              image={labRedes}
+              label="TID"
+              title="Laboratorio de Redes"
+              description="Modulo 1. Laboratorio de TIC"
+              action={{
+                type: "internal",
+                route: "/pages/profile/profile-overview",
+                color: "info",
+                label: "ver proyecto",
+              }}
+              authors={[
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6} xl={3}>
+            <DefaultProjectCard
+              image={siteUtem}
+              label="Sistemas"
+              title="SITE"
+              action={{
+                type: "internal",
+                route: "/pages/profile/profile-overview",
+                color: "info",
+                label: "ver proyecto",
+              }}
+              authors={[
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6} xl={3}>
+            <DefaultProjectCard
+              image={labForense}
+              label="TID"
+              title="laboratorio de soporte técnico"
+              action={{
+                type: "internal",
+                route: "/pages/profile/profile-overview",
+                color: "info",
+                label: "ver proyecto",
+              }}
+              authors={[
+                { image: team2, name: "Perseo Osuna" },
+                { image: team1, name: "Kaori Bautista" },
+                { image: team3, name: "Cynthia Hernandez" },
+              ]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6} xl={3}>
+            <DefaultProjectCard
+              image={labChes}
+              label="Gastro"
+              title="Cosas de Ché"
               description="Different people have different taste, and various types of music."
               action={{
                 type: "internal",
                 route: "/pages/profile/profile-overview",
                 color: "info",
-                label: "view project",
+                label: "ver proyecto",
               }}
               authors={[
-                { image: team4, name: "Peterson" },
-                { image: team3, name: "Nick Daniel" },
-                { image: team2, name: "Ryan Milly" },
-                { image: team1, name: "Elena Morison" },
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
               ]}
             />
           </Grid>
           <Grid item xs={12} md={6} xl={3}>
             <DefaultProjectCard
-              image={homeDecor4}
-              label="project #4"
-              title="gothic"
-              description="Why would anyone pick blue over pink? Pink is obviously a better color."
+              image={labIot}
+              label="TID"
+              title="Laboratorio de IoT"
+              description="Módulo 1. Aula 9"
               action={{
                 type: "internal",
                 route: "/pages/profile/profile-overview",
                 color: "info",
-                label: "view project",
+                label: "ver proyecto",
               }}
               authors={[
-                { image: team4, name: "Peterson" },
-                { image: team3, name: "Nick Daniel" },
-                { image: team2, name: "Ryan Milly" },
-                { image: team1, name: "Elena Morison" },
+                { image: team2, name: "Perseo Osuna" },
+                { image: team4, name: "Gael Hurtado" },
+                { image: team3, name: "Kaori Bautista" },
+                { image: team4, name: "Hugo Casarrubias" },
               ]}
             />
           </Grid>
