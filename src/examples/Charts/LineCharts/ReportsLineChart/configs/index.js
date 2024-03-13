@@ -27,7 +27,7 @@ function configs(labels, datasets) {
           borderColor: "rgba(255, 255, 255, .8)",
           borderWidth: 4,
           backgroundColor: "transparent",
-          fill: true,
+          fill: false,
           data: datasets.data,
           maxBarThickness: 6,
         },

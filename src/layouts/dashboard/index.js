@@ -36,7 +36,7 @@ import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
 
 function Dashboard() {
-  const { sales, tasks } = reportsLineChartData;
+  const { sales, tasks, co2 } = reportsLineChartData;
 
   return (
     <DashboardLayout>
@@ -120,13 +120,13 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="daily sales"
+                  title="temperatura"
                   description={
                     <>
-                      (<strong>+15%</strong>) increase in today sales.
+                      (<strong>+15%</strong>) de incremento.
                     </>
                   }
-                  date="updated 4 min ago"
+                  date="Actualizado hace 5 minutos"
                   chart={sales}
                 />
               </MDBox>
@@ -135,16 +135,27 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="dark"
-                  title="completed tasks"
-                  description="Last Campaign Performance"
+                  title="iluminacion"
+                  description="Lumens por lectura"
                   date="just updated"
                   chart={tasks}
                 />
               </MDBox>
             </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="warning"
+                  title="concentración de CO2"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={co2}
+                />
+              </MDBox>
+            </Grid>
           </Grid>
         </MDBox>
-        <MDBox>
+        {/* <MDBox>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={8}>
               <Projects />
@@ -153,7 +164,7 @@ function Dashboard() {
               <OrdersOverview />
             </Grid>
           </Grid>
-        </MDBox>
+        </MDBox> */}
       </MDBox>
       <Footer />
     </DashboardLayout>
