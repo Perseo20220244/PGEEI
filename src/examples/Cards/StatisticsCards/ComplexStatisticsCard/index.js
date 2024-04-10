@@ -12,6 +12,9 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// importa Reacat y el componente Switch
+import React, { useState } from "react";
+import Switch from "@mui/material/Switch";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -25,7 +28,12 @@ import Icon from "@mui/material/Icon";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-function ComplexStatisticsCard({ color, title, count, percentage, icon }) {
+function ComplexStatisticsCard({ color, title, count, icon }) {
+  const [checked, setChecked] = useState(false); // agrega el estado para el switch
+
+  const handleChange = () => {
+    setChecked((prev) => !prev); // maneja el cambio de estado del switch
+  };
   return (
     <Card>
       <MDBox display="flex" justifyContent="space-between" pt={1} px={2}>
@@ -55,17 +63,7 @@ function ComplexStatisticsCard({ color, title, count, percentage, icon }) {
       </MDBox>
       <Divider />
       <MDBox pb={2} px={2}>
-        <MDTypography component="p" variant="button" color="text" display="flex">
-          <MDTypography
-            component="span"
-            variant="button"
-            fontWeight="bold"
-            color={percentage.color}
-          >
-            {percentage.amount}
-          </MDTypography>
-          &nbsp;{percentage.label}
-        </MDTypography>
+        <Switch checked={checked} onChange={handleChange} inputProps={{ "aria-label": "switch" }} />
       </MDBox>
     </Card>
   );
