@@ -28,6 +28,8 @@ import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
 import Divider from "@mui/material/Divider";
 
+import AcUnitIcon from "@mui/icons-material/AcUnit";
+
 // Data
 import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
 import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
@@ -48,9 +50,10 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 color="dark"
-                icon="weekend"
+                icon="light_mode"
                 title="Luminaria"
-                count={`${281} lumen/m2`}
+                count={281}
+                measure="lumen / m2"
               />
             </MDBox>
           </Grid>
@@ -58,25 +61,21 @@ function Dashboard() {
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 color="warning"
-                icon="leaderboard"
-                title="Temperatura"
-                count={`${28} °C`}
+                icon="ac_unit"
+                title="a/a"
+                count={28}
+                measure="°C"
               />
             </MDBox>
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
-              <ComplexStatisticsCard color="success" icon="store" title="Revenue" count="34k" />
+              <ComplexStatisticsCard color="success" icon="smart_display" title="Proyector" />
             </MDBox>
           </Grid>
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
-              <ComplexStatisticsCard
-                color="primary"
-                icon="person_add"
-                title="Followers"
-                count="+91"
-              />
+              <ComplexStatisticsCard color="primary" icon="flood" title="SPCI" count="+91" />
             </MDBox>
           </Grid>
         </Grid>

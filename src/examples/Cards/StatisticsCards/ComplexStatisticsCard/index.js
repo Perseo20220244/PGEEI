@@ -28,7 +28,7 @@ import Icon from "@mui/material/Icon";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-function ComplexStatisticsCard({ color, title, count, icon }) {
+function ComplexStatisticsCard({ color, title, measure, count, percentage, icon }) {
   const [checked, setChecked] = useState(false); // agrega el estado para el switch
 
   const handleChange = () => {
@@ -55,10 +55,13 @@ function ComplexStatisticsCard({ color, title, count, icon }) {
           </Icon>
         </MDBox>
         <MDBox textAlign="right" lineHeight={1.25}>
-          <MDTypography variant="button" fontWeight="light" color="text">
+          <MDTypography variant="h4" fontWeight="light" color="text">
             {title}
           </MDTypography>
-          <MDTypography variant="h4">{count}</MDTypography>
+          <MDTypography variant="h5">{count}</MDTypography>
+          <MDTypography variant="button" fontWeight="light" color="text">
+            {measure}
+          </MDTypography>
         </MDBox>
       </MDBox>
       <Divider />
@@ -93,6 +96,7 @@ ComplexStatisticsCard.propTypes = {
   ]),
   title: PropTypes.string.isRequired,
   count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  measure: PropTypes.string.isRequired,
   percentage: PropTypes.shape({
     color: PropTypes.oneOf([
       "primary",
