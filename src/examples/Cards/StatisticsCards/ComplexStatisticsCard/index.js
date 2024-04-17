@@ -12,6 +12,9 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// importa Reacat y el componente Switch
+import React, { useState } from "react";
+import Switch from "@mui/material/Switch";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -25,7 +28,12 @@ import Icon from "@mui/material/Icon";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-function ComplexStatisticsCard({ color, title, count, percentage, icon }) {
+function ComplexStatisticsCard({ color, title, measure, count, percentage, icon }) {
+  const [checked, setChecked] = useState(false); // agrega el estado para el switch
+
+  const handleChange = () => {
+    setChecked((prev) => !prev); // maneja el cambio de estado del switch
+  };
   return (
     <Card>
       <MDBox display="flex" justifyContent="space-between" pt={1} px={2}>
@@ -47,25 +55,18 @@ function ComplexStatisticsCard({ color, title, count, percentage, icon }) {
           </Icon>
         </MDBox>
         <MDBox textAlign="right" lineHeight={1.25}>
-          <MDTypography variant="button" fontWeight="light" color="text">
+          <MDTypography variant="h4" fontWeight="light" color="text">
             {title}
           </MDTypography>
-          <MDTypography variant="h4">{count}</MDTypography>
+          <MDTypography variant="h5">{count}</MDTypography>
+          <MDTypography variant="button" fontWeight="light" color="text">
+            {measure}
+          </MDTypography>
         </MDBox>
       </MDBox>
       <Divider />
       <MDBox pb={2} px={2}>
-        <MDTypography component="p" variant="button" color="text" display="flex">
-          <MDTypography
-            component="span"
-            variant="button"
-            fontWeight="bold"
-            color={percentage.color}
-          >
-            {percentage.amount}
-          </MDTypography>
-          &nbsp;{percentage.label}
-        </MDTypography>
+        <Switch checked={checked} onChange={handleChange} inputProps={{ "aria-label": "switch" }} />
       </MDBox>
     </Card>
   );
@@ -95,6 +96,7 @@ ComplexStatisticsCard.propTypes = {
   ]),
   title: PropTypes.string.isRequired,
   count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  measure: PropTypes.string.isRequired,
   percentage: PropTypes.shape({
     color: PropTypes.oneOf([
       "primary",
